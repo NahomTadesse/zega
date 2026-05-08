@@ -4,8 +4,9 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
-  // Force static export - no SSR
-  build: {
-    ssr: false,
+  vite: {
+    build: {
+      ssr: false,  
+    },
   },
 });
